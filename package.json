@@ -1,0 +1,38 @@
+{
+  "name": "lisan-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A local English-to-Arabic video dubbing studio powered by ElevenLabs.",
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "node server/launch.mjs",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "check": "node --check server/index.mjs && node --check server/app.mjs && node --check public/app.js",
+    "build": "node scripts/build.mjs"
+  },
+  "dependencies": {
+    "@ffprobe-installer/ffprobe": "2.1.2",
+    "axios": "^1.12.2",
+    "express": "^5.1.0",
+    "ffmpeg-static": "^5.3.0",
+    "form-data": "^4.0.4",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  },
+  "license": "MIT",
+  "author": "Kamel Abdullatif",
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamelsaif/lisan-studio.git"
+  },
+  "homepage": "https://github.com/kamelsaif/lisan-studio#readme",
+  "bugs": {
+    "url": "https://github.com/kamelsaif/lisan-studio/issues"
+  }
+}

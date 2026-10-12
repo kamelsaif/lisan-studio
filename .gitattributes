@@ -1,0 +1,7 @@
+* text=auto
+*.mjs text eol=lf
+*.js text eol=lf
+*.command text eol=lf
+*.mp4 binary
+*.wav binary
+*.png binary
